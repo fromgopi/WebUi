@@ -2,7 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/
+    destination: /var/www/html/WebUi
+  - source: /js/
+    destination: /var/www/html/WebUi/js
+  - source: /style/
+    destination: /var/www/html/WebUi/style
+  - source: /img/
+    destination: /var/www/html/WebUi/img
 hooks:
   BeforeInstall:
     - location: deploy/install_dep
