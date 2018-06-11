@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >Handbook Inc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./img/hblogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/Main.css">
+    <link rel="stylesheet" href="style/materialize.css">
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/modals.js"></script>
+</head>
+<body>
+<header class="top-bar _fixed">
+    <div class="-container">
+        <img src="img/hblogo.png" class="-HBlogo">
+        <div class="ProjectTitle">Handbook</div>
+        <button type="button" class="waves-effect waves-teal btn-flat btn-small btn-login" data-toggle="modal" data-target="#exampleModal">Login</button>
+    </div>
+</header>
+
+
+<div id="root"></div>
+
+<div class="footer">
+    <div class="HB-Container">
+        <div class="HB-Row">
+            <div class="col-xs-2">
+                <h5 class="white-text ">About Us</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Press</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Work Here</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
+                    <li><a class="grey-text text-lighten-5" href="#!">Privacy Policy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="HB-Row">
+            <div class="col-xs-1">
+                <h5 class="white-text">Company</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Press</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Work Here</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<!-- Footer -->
+
+<!-- Modal for login starts here... -->
+
+<div class="modal" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div>
+        <div>
+            <div class="modal-header">
+                <h5 id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="user-name"><span class="glyphicon glyphicon-user"></span>Username:</label>
+                        <input type="text" class="form-control" id="user-name" placeholder="sam">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><span class="glyphicon"></span>Password:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"  onclick="submitForm()" id="loginBtn">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
