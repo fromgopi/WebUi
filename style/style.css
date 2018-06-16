@@ -75,15 +75,12 @@ a.modal-href{
     text-align: center;
 }
 
-.Smi{
-    width: 12.333333%;
-}
 
 .HB-Container{
     width: 100%;
 }
 .HB-Row{
-    margin: -2% auto 1%;
+    margin: auto 1%;
 }
 
 .top-bar .-container {
@@ -156,4 +153,47 @@ button.-close{
 
 .topo{
     text-align: center;
+}
+
+.footer .-font{
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer .-footLogo{
+    transition: background-color ease-in-out .25s;
+    width: 2.7%;
+    position : relative;
+    top: 0px;
+    right: 37%;
+    object-fit: contain;
+}
+
+.footer .-footCopyRight{
+    position: absolute;
+    left: 14%;
+    font-size: 16px;
+    margin: 9px;
+}
+
+.-copyRight{
+    position : relative;
+    bottom: -5px;
+    right: 33%;
+}
+
+.-social-plugins{
+    margin: 0 1.9rem 0;
+    width: 13.8rem;
+}
+
+.-social-plugins li{
+    display: block;
+    min-width: 3rem;
+    position: relative;
+}
+
+.-foot-col-abt{
+    width: 60%;
+
 }
