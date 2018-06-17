@@ -28,6 +28,10 @@
 </header>
 
 
+<!--
+New Footer design goes here. For time being, bellow footer is used..
+-->
+
 <!--<div id="foot" class="footer">
     <footer>
         <img src="./img/hblogo.png" class="-footLogo">
@@ -84,29 +88,32 @@
 
 <div class="modal" id="loginModal" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div>
-        <div>
-            <div class="modal-header">
-                <h5 id="loginModalLabel">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="user-name"><span class="glyphicon glyphicon-user"></span>Username:</label>
-                        <input type="text" class="form-control" id="user-name" placeholder="sam">
-                    </div>
-                    <div class="form-group">
-                        <label for="password"><span class="glyphicon"></span>Password:</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary"  onclick="submitForm()" id="loginBtn">Login</button>
-            </div>
+        <div class="-modal-header">
+            <button type="button" class="-close" data-dismiss="modal" aria-label="Close">&times;</button>
+            <h6 id="loginModalLabel" class="topo">Login</h6>
+        </div>
+        <div class="modal-body">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="user-name"><span class="glyphicon glyphicon-user"></span>Username:</label>
+                    <input type="text" class="form-control" id="user-name" placeholder="sam">
+                </div>
+                <div class="form-group">
+                    <label for="password"><span class="glyphicon"></span>Password:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                <i class="material-icons right">close</i>
+            </button>
+            <button class="btn waves-effect waves-light" type="button" id="loginBtn" onclick="submitForm()">Login
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light" type="reset" id="refreshLogin">Refresh
+                <i class="material-icons right">refresh</i>
+            </button>
         </div>
     </div>
 </div>
@@ -116,7 +123,7 @@
 <div class="modal fade" id="regModal" role="dialog" aria-labelledby="regModalLable" aria-hidden="true">
     <div>
         <div class="-modal-header">
-            <button type="button" class="-close" data-dismiss="modal" aria-label="Close">&CircleTimes;</button>
+            <button type="button" class="-close" data-dismiss="modal" aria-label="Close">&times;</button>
             <h6 id="regModalLable" class="topo">Register</h6>
         </div>
         <div class="modal-body">
@@ -127,11 +134,24 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="last-name" placeholder="LastName">
                 </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="u-name" placeholder="UserName">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                </div>
             </form>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary"  id="regBtn">Login</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                <i class="material-icons right">close</i>
+            </button>
+            <button type="button" class="btn waves-effect waves-light"  id="regBtn">Login
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light" type="reset" id="refreshRegister">Refresh
+                <i class="material-icons right">refresh</i>
+            </button>
         </div>
     </div>
 </div>
